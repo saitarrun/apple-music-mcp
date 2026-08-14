@@ -151,7 +151,10 @@ class AsyncAppleMusicClient:
         next_path = f"/me/library/playlists/{playlist_id}/tracks?limit={min(limit, 100)}"
 
         while next_path and len(tracks) < limit:
-            data = await self.request("GET", next_path)
+            try:
+                data = await self.request("GET", next_path)
+            except AppleMusicAPIError:
+                break
             raw_items = data.get("data", [])
             for item in raw_items:
                 itype = item.get("type", "")
