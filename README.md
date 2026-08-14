@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./assets/banner.svg" alt="Apple Music MCP Banner" width="100%" />
+</div>
+
 # 🎵 Apple Music High-Efficiency MCP Server
 
 A high-performance **Model Context Protocol (MCP)** server for Apple Music, featuring a **dual-engine architecture** (macOS Native AppleScript/JXA + Async Cloud REST API), intelligent caching, cross-platform chart discovery (Shazam, Spotify, YouTube, Apple Music), smart music recommendations, and zero-timeout playlist operations.
