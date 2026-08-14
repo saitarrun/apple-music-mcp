@@ -1,0 +1,48 @@
+{
+  "name": "@saitarrun/apple-music-mcp",
+  "version": "1.0.0",
+  "description": "High-efficiency Apple Music Model Context Protocol (MCP) server with dual native JXA & Cloud API engines, async parallel batching, and cross-platform charts",
+  "main": "bin/cli.js",
+  "bin": {
+    "apple-music-mcp": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "serve": "node bin/cli.js serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saitarrun/apple-music-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "apple-music",
+    "claude",
+    "cursor",
+    "ai-agents",
+    "spotify",
+    "shazam",
+    "youtube-music",
+    "playlist-generator"
+  ],
+  "author": "saitarrun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saitarrun/apple-music-mcp/issues"
+  },
+  "homepage": "https://github.com/saitarrun/apple-music-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin",
+    "src",
+    "pyproject.toml",
+    "smithery.yaml",
+    "glama.json",
+    "README.md",
+    "LICENSE"
+  ]
+}

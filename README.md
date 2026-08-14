@@ -28,8 +28,14 @@
 
 ## ⚡ Quick Start
 
-Run the server immediately with `uvx` (no installation required):
+Run instantly with **`npx`** or **`uvx`** (zero install required):
 
+### Option A: Using `npx`
+```bash
+npx -y @saitarrun/apple-music-mcp
+```
+
+### Option B: Using `uvx`
 ```bash
 uvx --from git+https://github.com/saitarrun/apple-music-mcp.git apple-music-mcp serve
 ```
