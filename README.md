@@ -7,10 +7,20 @@
   Dual native macOS JXA &amp; cloud REST engine with cross-platform discovery, async batching, and zero-timeout execution.
 
   <p>
+    <a href="https://github.com/saitarrun/apple-music-mcp/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-FA2D55.svg?style=flat-square" alt="MIT License" /></a>
+    <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10+-3776AB.svg?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+" /></a>
+    <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-1.0.0-0A84FF.svg?style=flat-square&logo=anthropic&logoColor=white" alt="Model Context Protocol" /></a>
+    <a href="https://apple.com/macos"><img src="https://img.shields.io/badge/Platform-macOS-000000.svg?style=flat-square&logo=apple&logoColor=white" alt="macOS Platform" /></a>
+    <a href="https://claude.ai"><img src="https://img.shields.io/badge/Claude-Desktop_Ready-D97706.svg?style=flat-square" alt="Claude Desktop" /></a>
+    <a href="https://cursor.com"><img src="https://img.shields.io/badge/Cursor-Compatible-8B5CF6.svg?style=flat-square" alt="Cursor Compatible" /></a>
+  </p>
+
+  <p>
     <a href="#-quick-start">Quick Start</a> •
     <a href="#-mcp-client-setup">Client Setup</a> •
     <a href="#-tools-reference">Tools</a> •
-    <a href="#-cli">CLI</a>
+    <a href="#-cli">CLI</a> •
+    <a href="#-tags--discoverability">Keywords</a>
   </p>
 </div>
 
@@ -143,6 +153,12 @@ apple-music-mcp clean-cache
 # Run MCP server over stdio
 apple-music-mcp serve
 ```
+
+---
+
+## 🏷️ Tags & Discoverability
+
+`#ModelContextProtocol` `#MCP` `#MCPServer` `#AppleMusic` `#ClaudeAI` `#CursorAI` `#AnthropicClaude` `#AIAgents` `#MusicKit` `#Spotify` `#Shazam` `#YouTubeMusic` `#AppleScript` `#Python` `#OpenSource` `#DeveloperTools` `#LLM` `#Automation` `#PlaylistGenerator`
 
 ---
 
