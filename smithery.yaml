@@ -1,0 +1,16 @@
+# Smithery configuration for Apple Music MCP
+# https://smithery.ai/docs/config
+
+startCommand:
+  type: stdio
+  config:
+    storefront:
+      type: string
+      description: Apple Music storefront country code (e.g. "us", "in", "gb")
+      default: "in"
+  commandFunction:
+    - uvx
+    - --from
+    - git+https://github.com/saitarrun/apple-music-mcp.git
+    - apple-music-mcp
+    - serve
