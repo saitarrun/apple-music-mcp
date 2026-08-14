@@ -7,12 +7,11 @@
   Dual native macOS JXA &amp; cloud REST engine with cross-platform discovery, async batching, and zero-timeout execution.
 
   <p>
+    <a href="https://www.npmjs.com/package/@saitarrunpitta/apple-music-mcp"><img src="https://img.shields.io/npm/v/@saitarrunpitta/apple-music-mcp.svg?style=flat-square&color=CB3837&logo=npm" alt="npm version" /></a>
     <a href="https://github.com/saitarrun/apple-music-mcp/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-FA2D55.svg?style=flat-square" alt="MIT License" /></a>
     <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10+-3776AB.svg?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+" /></a>
-    <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-1.0.0-0A84FF.svg?style=flat-square&logo=anthropic&logoColor=white" alt="Model Context Protocol" /></a>
+    <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-1.0.0-0A84FF.svg?style=flat-square" alt="Model Context Protocol" /></a>
     <a href="https://apple.com/macos"><img src="https://img.shields.io/badge/Platform-macOS-000000.svg?style=flat-square&logo=apple&logoColor=white" alt="macOS Platform" /></a>
-    <a href="https://claude.ai"><img src="https://img.shields.io/badge/Claude-Desktop_Ready-D97706.svg?style=flat-square" alt="Claude Desktop" /></a>
-    <a href="https://cursor.com"><img src="https://img.shields.io/badge/Cursor-Compatible-8B5CF6.svg?style=flat-square" alt="Cursor Compatible" /></a>
   </p>
 
   <p>
@@ -30,9 +29,9 @@
 
 Run instantly with **`npx`** or **`uvx`** (zero install required):
 
-### Option A: Using `npx`
+### Option A: Using `npx` (Recommended)
 ```bash
-npx -y @saitarrun/apple-music-mcp
+npx -y @saitarrunpitta/apple-music-mcp
 ```
 
 ### Option B: Using `uvx`
@@ -40,12 +39,11 @@ npx -y @saitarrun/apple-music-mcp
 uvx --from git+https://github.com/saitarrun/apple-music-mcp.git apple-music-mcp serve
 ```
 
-Or install locally with pip/uv:
-
+### Option C: Install locally via npm or pip
 ```bash
-git clone https://github.com/saitarrun/apple-music-mcp.git
-cd apple-music-mcp
-pip install -e .
+npm install -g @saitarrunpitta/apple-music-mcp
+# or
+pip install git+https://github.com/saitarrun/apple-music-mcp.git
 ```
 
 ---
@@ -57,7 +55,7 @@ Add `apple-music` to your preferred AI assistant in seconds:
 ### 1. Antigravity / AGY CLI
 
 ```bash
-agy mcp add apple-music -- uvx --from git+https://github.com/saitarrun/apple-music-mcp.git apple-music-mcp serve
+agy mcp add apple-music -- npx -y @saitarrunpitta/apple-music-mcp
 ```
 
 ### 2. Claude Desktop (`claude_desktop_config.json`)
@@ -66,12 +64,10 @@ agy mcp add apple-music -- uvx --from git+https://github.com/saitarrun/apple-mus
 {
   "mcpServers": {
     "apple-music": {
-      "command": "uvx",
+      "command": "npx",
       "args": [
-        "--from",
-        "git+https://github.com/saitarrun/apple-music-mcp.git",
-        "apple-music-mcp",
-        "serve"
+        "-y",
+        "@saitarrunpitta/apple-music-mcp"
       ]
     }
   }
@@ -84,12 +80,10 @@ agy mcp add apple-music -- uvx --from git+https://github.com/saitarrun/apple-mus
 {
   "mcpServers": {
     "apple-music": {
-      "command": "uvx",
+      "command": "npx",
       "args": [
-        "--from",
-        "git+https://github.com/saitarrun/apple-music-mcp.git",
-        "apple-music-mcp",
-        "serve"
+        "-y",
+        "@saitarrunpitta/apple-music-mcp"
       ]
     }
   }
@@ -99,7 +93,7 @@ agy mcp add apple-music -- uvx --from git+https://github.com/saitarrun/apple-mus
 ### 4. Codex MCP
 
 ```bash
-codex mcp add apple-music -- uvx --from git+https://github.com/saitarrun/apple-music-mcp.git apple-music-mcp serve
+codex mcp add apple-music -- npx -y @saitarrunpitta/apple-music-mcp
 ```
 
 ---

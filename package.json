@@ -1,5 +1,5 @@
 {
-  "name": "@saitarrun/apple-music-mcp",
+  "name": "@saitarrunpitta/apple-music-mcp",
   "version": "1.0.0",
   "description": "High-efficiency Apple Music Model Context Protocol (MCP) server with dual native JXA & Cloud API engines, async parallel batching, and cross-platform charts",
   "main": "bin/cli.js",
@@ -27,7 +27,7 @@
     "youtube-music",
     "playlist-generator"
   ],
-  "author": "saitarrun",
+  "author": "Sai Tarrun Pitta",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/saitarrun/apple-music-mcp/issues"
