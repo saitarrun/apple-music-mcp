@@ -9,8 +9,5 @@ startCommand:
       description: Apple Music storefront country code (e.g. "us", "in", "gb")
       default: "in"
   commandFunction:
-    - uvx
-    - --from
-    - git+https://github.com/saitarrun/apple-music-mcp.git
     - apple-music-mcp
     - serve
