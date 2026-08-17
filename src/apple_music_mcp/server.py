@@ -324,13 +324,17 @@ TOOLS = [
 ]
 
 
-async def handle_list_tools(req: types.ListToolsRequest) -> types.ListToolsResult:
+async def handle_list_tools(
+    _ctx: Any, _params: types.PaginatedRequestParams
+) -> types.ListToolsResult:
     return types.ListToolsResult(tools=TOOLS)
 
 
-async def handle_call_tool(req: types.CallToolRequest) -> types.CallToolResult:
-    name = req.params.name
-    args = req.params.arguments or {}
+async def handle_call_tool(
+    _ctx: Any, params: types.CallToolRequestParams
+) -> types.CallToolResult:
+    name = params.name
+    args = params.arguments or {}
     res: Any = {}
 
     try:
@@ -454,8 +458,8 @@ async def handle_call_tool(req: types.CallToolRequest) -> types.CallToolResult:
 
 
 # Register handlers
-app.add_request_handler("tools/list", types.ListToolsRequest, handle_list_tools)
-app.add_request_handler("tools/call", types.CallToolRequest, handle_call_tool)
+app.add_request_handler("tools/list", types.PaginatedRequestParams, handle_list_tools)
+app.add_request_handler("tools/call", types.CallToolRequestParams, handle_call_tool)
 
 
 async def run_server():
