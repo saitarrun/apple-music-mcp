@@ -15,6 +15,12 @@
   </p>
 
   <p>
+    <a href="https://glama.ai/mcp/servers/saitarrun/apple-music-mcp"><img src="https://glama.ai/mcp/servers/saitarrun/apple-music-mcp/badges/score.svg" alt="apple-music-mcp MCP server score" /></a>
+  </p>
+
+  <a href="https://glama.ai/mcp/servers/saitarrun/apple-music-mcp"><img src="https://glama.ai/mcp/servers/saitarrun/apple-music-mcp/badges/card.svg" alt="apple-music-mcp MCP server card" /></a>
+
+  <p>
     <a href="#-quick-start">Quick Start</a> •
     <a href="#-mcp-client-setup">Client Setup</a> •
     <a href="#-tools-reference">Tools</a> •

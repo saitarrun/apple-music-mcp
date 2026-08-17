@@ -1,15 +1,6 @@
 {
-  "$schema": "https://glama.ai/mcp/schema/server.json",
-  "name": "apple-music-mcp",
-  "description": "High-efficiency Apple Music MCP Server with Dual Native & Cloud Engines, Async Batching, Cross-Platform Charts, and Smart Caching",
-  "repository": "https://github.com/saitarrun/apple-music-mcp",
-  "runtime": "python",
-  "transport": "stdio",
-  "command": "uvx",
-  "args": [
-    "--from",
-    "git+https://github.com/saitarrun/apple-music-mcp.git",
-    "apple-music-mcp",
-    "serve"
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "saitarrun"
   ]
 }
